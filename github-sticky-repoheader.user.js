@@ -2,8 +2,8 @@
 // @name        GitHub sticky repoheader
 // @namespace   http://github.com/olmokramer
 // @description Make the repo header `position: sticky;`
-// @include     https://github.com/*
-// @version     1
+// @include     https://*.github.com/*
+// @version     2
 // @author      Olmo Kramer
 // @grant       none
 // ==/UserScript==

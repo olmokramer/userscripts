@@ -2,8 +2,8 @@
 // @name        merge2mergeer
 // @namespace   http://github.com/olmokramer
 // @description Change instances of 'merge' to 'mergeer'
-// @include     https://github.com/*
-// @version     1
+// @include     https://*.github.com/*
+// @version     2
 // @grant       none
 // ==/UserScript==
 
