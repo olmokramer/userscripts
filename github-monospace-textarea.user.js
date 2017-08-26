@@ -2,8 +2,9 @@
 // @name        GitHub monospace textarea
 // @namespace   http://github.com/olmokramer
 // @description Make fonts in <textarea> elements monospace
+// @include     https://github.com/*
 // @include     https://*.github.com/*
-// @version     2
+// @version     3
 // @author      Olmo Kramer
 // @grant       none
 // ==/UserScript==

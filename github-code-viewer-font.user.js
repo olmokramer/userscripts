@@ -2,8 +2,9 @@
 // @name        GitHub code-viewer font
 // @namespace   http://github.com/olmokramer
 // @description Change the font of the GitHub code-viewer
+// @include     https://github.com/*
 // @include     https://*.github.com/*
-// @version     2
+// @version     3
 // @author      Olmo Kramer
 // @grant       none
 // ==/UserScript==
