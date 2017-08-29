@@ -4,7 +4,7 @@
 // @description Change instances of 'merge' to 'mergeer'
 // @include     https://github.com/*
 // @include     https://*.github.com/*
-// @version     3
+// @version     4
 // @grant       none
 // ==/UserScript==
 
