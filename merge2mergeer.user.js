@@ -17,6 +17,8 @@
 		push:      'druk',
 		pull:      'trek',
 		commit:    'pleging',
+		rebase:    'herbaas',
+		rebasing:  'herbazen',
 	};
 
 	Object.keys(replacements).forEach(function(key) {
