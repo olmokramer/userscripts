@@ -4,7 +4,7 @@
 // @description Change instances of 'merge' to 'mergeer'
 // @include     https://github.com/*
 // @include     https://*.github.com/*
-// @version     4
+// @version     5
 // @grant       none
 // ==/UserScript==
 
@@ -16,6 +16,7 @@
 		merging:   'mergeren',
 		push:      'druk',
 		pull:      'trek',
+		PR:        'TR',
 		commit:    'pleging',
 		rebase:    'herbaas',
 		rebasing:  'herbazen',
