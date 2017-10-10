@@ -4,29 +4,30 @@
 // @description Change instances of 'merge' to 'mergeer'
 // @include     https://github.com/*
 // @include     https://*.github.com/*
-// @version     5
+// @version     6
 // @grant       none
 // ==/UserScript==
 
 (function() {
 	const replacements = {
-		mergeable: 'mergeerbaar',
-		mergable:  'mergeerbaar',
-		merge:     'mergeer',
-		merging:   'mergeren',
-		push:      'druk',
-		pull:      'trek',
-		PR:        'TR',
-		commit:    'pleging',
-		rebase:    'herbaas',
-		rebasing:  'herbazen',
+		mergeable:  'mergeerbaar',
+		mergable:   'mergeerbaar',
+		merge:      'mergeer',
+		merging:    'mergeren',
+		push:       'druk',
+		pull:       'trek',
+		PR:         'TR',
+		commit:     'pleging',
+		committing: 'plegen',
+		rebase:     'herbaas',
+		rebasing:   'herbazen',
 	};
 
 	Object.keys(replacements).forEach(function(key) {
 		replacements[capitalise(key)] = capitalise(replacements[key]);
 	});
 
-	const regex = new RegExp(Object.keys(replacements).join('|'), 'g');
+	const regex = /merge?able|merg(e|ing)|push|pull|commit(ting)?|rebas(e|ing)|\bpr\b/gi
 
 	function merge2mergeer() {
 		const texts = [];
@@ -50,6 +51,10 @@
 	setInterval(merge2mergeer, 2000);
 
 	function capitalise(str) {
-		return str[0].toUpperCase() + str.slice(1);
+		let i = 0;
+		while (str[i] == '\\') {
+			i += 2;
+		}
+		return str.slice(0, i) + str[i].toUpperCase() + str.slice(i + 1);
 	}
 })();
