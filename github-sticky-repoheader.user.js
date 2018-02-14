@@ -4,7 +4,7 @@
 // @description Make the repo header `position: sticky;`
 // @include     https://github.com/*
 // @include     https://*.github.com/*
-// @version     3
+// @version     4
 // @author      Olmo Kramer
 // @grant       none
 // ==/UserScript==
@@ -14,8 +14,27 @@
 
     const style = document.createElement('style');
     style.innerHTML = `
-        .repohead { position: sticky; top: 0; z-index: 10; }
-        .discussion-sidebar { position: sticky; top: 120px; z-index: 5; }
+
+.repohead {
+	position: sticky;
+	top: -63px;
+	z-index: 10;
+}
+
+.discussion-sidebar {
+	position: sticky;
+	top: 50px;
+	z-index: 5;
+}
+
+.pr-toolbar {
+	position: sticky;
+	top: 40px;
+	z-index: 5;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
+	margin-bottom: 1rem;
+}
+
     `;
     document.head.append(style);
 })();
